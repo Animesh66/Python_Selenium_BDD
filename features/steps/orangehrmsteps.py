@@ -24,4 +24,6 @@ def step_verify_logo(context):
 def step_close_browser(context):
     context.driver.close()
 
+# To execute this file we need write below command in terminal
+# "behave features/orangehrm.feature" that is behave <location of the feature file>
 
