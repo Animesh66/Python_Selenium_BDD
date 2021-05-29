@@ -1,6 +1,7 @@
 from behave import *
 from selenium import webdriver
 
+
 @given('I launch browser')
 def step_launch_browser(context):
     assert True, "Test passed"
