@@ -39,7 +39,7 @@ def step_verify_login(context):
         assert True, "Login Successful"
 
 # To install allure behave package type in terminal "pip3 install allure-behave"
-# Install Pycharm extension "allure-behave" in current interpeter
+# Install Pycharm extension "allure-behave" in current interpreter
 # To generate Allure Report we need to execute below command in terminal
 # "behave -f allure_behave.formatter:AllureFormatter -o /Users/animeshmukherjee/Desktop/Animesh/Log_file features/"
 # "behave -f allure_behave.formatter:AllureFormatter -o <(JSON)file location to be created> <feature file loation>"
