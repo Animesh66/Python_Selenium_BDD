@@ -29,7 +29,11 @@ def step_click_login(context):
 
 @then('User must successfully login to the Dashboard Page')
 def step_verify_login(context):
-    dashboard = context.driver.find_element_by_xpath("//h1[contains(text(),'Dashboard')]").text
-    assert dashboard == "Dashboard"
-    context.driver.close()
-
+    try:
+        dashboard = context.driver.find_element_by_xpath("//h1[contains(text(),'Dashboard')]").text
+    except:
+        context.driver.close()
+        assert False, "Login attempt failed"
+    if dashboard == "Dashboard":
+        context.driver.close()
+        assert True, "Login Successful"
