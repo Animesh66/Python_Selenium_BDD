@@ -1,12 +1,12 @@
 from behave import *
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
+
 
 
 @given('launch Chrome browser')
 def step_launch_browser(context):
-    context.driver = webdriver.Chrome()
-    context.driver.maximize_window()
-
+    pass
 
 @when('open orangeHRM homepage')
 def step_open_homepage(context):
