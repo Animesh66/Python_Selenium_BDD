@@ -10,3 +10,7 @@ def before_scenario(context, driver):
 
 def after_step(context, step):
     print()
+
+
+def after_scenario(context, driver):
+    context.driver.quit()
