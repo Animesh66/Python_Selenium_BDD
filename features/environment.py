@@ -6,3 +6,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 def before_scenario(context, driver):
     context.driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
     context.driver.maximize_window()
+
+
+def after_step(context, step):
+    print()
