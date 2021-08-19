@@ -1,4 +1,5 @@
 Feature: OrangeHRM Login
+  @sanity
   Scenario: Login to OrangeHRM with valid parameter
     Given I launch Chrome browser
     When I open OrangeHRM homepage
@@ -8,6 +9,7 @@ Feature: OrangeHRM Login
 
   # Scenario Outline is used to pass multiple parameter and repeat the execution
   # Scenario Outline is always followed by Examples section
+  @regression
    Scenario Outline: Login to OrangeHRM with Multiple parameter
     Given I launch Chrome browser
     When I open OrangeHRM homepage
