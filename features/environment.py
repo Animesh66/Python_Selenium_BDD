@@ -1,4 +1,7 @@
 # this is a hook in BDD and this will be executed before each scenario
+# Different type of hooks are before_step(), after_step(), before_scenario(), after_scenario()
+# before_all(), after_all()
+
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
