@@ -7,7 +7,7 @@ Feature: OrangeHRM Loin
     And Enter valid username and password
     And click on login
 
-  @uat # these are tages and can be fun using --tag="sanity"
+  @uat # these are tages and can be fun using --tag=sanity
   Scenario: Login to HRM Application
     Then User must login to the Dashboard page
 
